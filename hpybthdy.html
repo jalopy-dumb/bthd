@@ -39,15 +39,17 @@
 			var year = today.getFullYear();
 			var extradays = Math.round(Number(year)/4);
 			var days = Number(year)*365 + Number(extradays)-719551
-			document.getElementById("myclock").innerHTML="<h1>老爸已经在这个世界上生活了"+days+hh+":"+mm+":"+ss+"</h1>"
+			document.getElementById("myclock").innerHTML="<h1>老爸已经在这个世界上生活了"+days+"天"+hh+":"+mm+":"+ss+"</h1>"
 		   
 		} 
 		//setInterval（）方法可以按照指定的周期调用函数或计算表达式
 		var mytime = setInterval("disptime()",1000);
 	</script>
 	<body οnlοad="disptime()">
-		<div id="myclock"></div>
-	</body>
+		<div class="container h-100">
+		<div id="myclock" class="lead mb-5 text-white-50"></div>
+		</div>
+			</body>
 
   <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
   <footer class="pt-5 pb-5 footer py-5 mt-5 bg-dark text-white">
